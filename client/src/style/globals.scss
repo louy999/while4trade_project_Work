@@ -1,0 +1,10 @@
+@import "./color";
+@import "./navbar";
+@import "./chat";
+@import "./home";
+@import "../../node_modules/normalize.css/normalize.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
