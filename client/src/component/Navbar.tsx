@@ -13,7 +13,7 @@ class Navbar extends React.Component<NavbarProps, NavbarState> {
     window.addEventListener("scroll", () => {
       let bgDark = "bg-body-tertiary";
       if (window.scrollY > 10) {
-        bgDark = "bg-dark";
+        bgDark = "bg-light";
       }
       this.setState({ bgDark });
     });

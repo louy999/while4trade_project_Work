@@ -1,7 +1,7 @@
 const Chat = (props: any) => {
   return (
     <>
-      <div className="chat"></div>
+      <div className="chat">chat</div>
     </>
   );
 };
