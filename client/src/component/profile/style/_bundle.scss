@@ -1,0 +1,20 @@
+.profile {
+  > div {
+    &.bundle {
+      height: fit-content;
+      .title {
+        font-style: italic;
+        width: 100%;
+        text-transform: capitalize;
+        font-size: 2em;
+        border-bottom: 2px solid #ddd;
+      }
+      .s {
+        text-transform: capitalize;
+      }
+      .time {
+        font-size: 2em;
+      }
+    }
+  }
+}

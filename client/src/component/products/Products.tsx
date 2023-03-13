@@ -1,4 +1,3 @@
-import img from "../image/Screenshot_from_2023-03-08_05-12-00-removebg-preview.png";
 const Products = (props: any) => {
   return (
     <>

@@ -90,6 +90,8 @@ nav {
           margin: 0 15px;
           a {
             font-size: 18px;
+            align-items: center;
+            display: flex;
             &.active {
               font-size: 25px;
               background-color: #fff;

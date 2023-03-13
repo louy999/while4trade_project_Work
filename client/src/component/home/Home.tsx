@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import Typed from "react-typed";
 import axios from "axios";
+import "./home.css";
 import { NavLink } from "react-router-dom";
-import imgBackground from "../image/1001504.jpg";
-import logoAED from "../image/logo.svg";
-import logoBtc from "../image/btc.svg";
-import logoCad from "../image/cad.svg";
-import logoGBP from "../image/gbp.svg";
-import logoBRL from "../image/ICON_BRL.svg";
-import logoJPY from "../image/jpy.svg";
-import imgProduct from "../image/1303503.jpg";
+import imgBackground from "../../image/1001504.jpg";
+import logoAED from "../../image/logo.svg";
+import logoBtc from "../../image/btc.svg";
+import logoCad from "../../image/cad.svg";
+import logoGBP from "../../image/gbp.svg";
+import logoBRL from "../../image/ICON_BRL.svg";
+import logoJPY from "../../image/jpy.svg";
+import imgProduct from "../../image/1303503.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTelegram,
@@ -18,9 +19,8 @@ import {
   faWhatsapp,
   faTiktok,
 } from "@fortawesome/free-brands-svg-icons";
-// import wave from "../image/wave.svg";
 const Home = (props) => {
-  const [data, setData]: any = useState("");
+  // const [data, setData]: any = useState("");
 
   const options = {
     method: "GET",
@@ -44,72 +44,73 @@ const Home = (props) => {
   return (
     <>
       {/* // container for home page */}
-      <div className="container home-page">
+      <div className="img">
         <img src={imgBackground} className="d-block  img-background" alt="" />
-
+      </div>
+      <div className="container home-page">
         {/* for chart forex with price and async per min */}
         <div className={`container-usd animate__animated animate__bounceInUp`}>
           <div>
             <img src={logoBtc} alt="" />
             <span className="name-usd">USD/BTC :</span>
-            <span className="number-used">{data.USDBTC}</span>
+            <span className="number-used">k</span>
           </div>
           <div>
             <img src={logoAED} alt="" />
             <span className="name-usd">USD/XAU :</span>
-            <span className="number-used">{data.USDXAU}</span>
+            <span className="number-used">k</span>
           </div>
           <div>
             <img src={logoAED} alt="" />
             <span className="name-usd">USD/EUR :</span>
-            <span className="number-used">{data.USDEUR}</span>
+            <span className="number-used">k</span>
           </div>
 
           <div>
             <img src={logoAED} alt="" />
             <span className="name-usd">USD/AED :</span>
-            <span className="number-used">{data.USDAED}</span>
+            <span className="number-used">k</span>
           </div>
           <div>
             <img src={logoBRL} alt="" />
             <span className="name-usd">USD/BRL :</span>
-            <span className="number-used">{data.USDBRL}</span>
+            <span className="number-used">k</span>
           </div>
           <div>
             <img src={logoCad} alt="" />
             <span className="name-usd">USD/CAD :</span>
-            <span className="number-used">{data.USDCAD}</span>
+            <span className="number-used">k</span>
           </div>
           <div>
             <img src={logoGBP} alt="" />
             <span className="name-usd">USD/GBP :</span>
-            <span className="number-used">{data.USDGBP}</span>
+            <span className="number-used">k</span>
           </div>
           <div>
             <img src={logoJPY} alt="" />
             <span className="name-usd">USD/JPY :</span>
-            <span className="number-used">{data.USDJPY}</span>
+            <span className="number-used">k</span>
           </div>
 
           <div>
             <img src={logoAED} alt="" />
             <span className="name-usd">USD/XAG :</span>
-            <span className="number-used">{data.USDXAG}</span>
+            <span className="number-used">k</span>
           </div>
           <div>
             <img src={logoAED} alt="" />
             <span className="name-usd">USD/QAR :</span>
-            <span className="number-used">{data.USDQAR}</span>
+            <span className="number-used">k</span>
           </div>
           <div>
             <img src={logoAED} alt="" />
             <span className="name-usd">USD/KWD :</span>
-            <span className="number-used">{data.USDKWD}</span>
+            <span className="number-used">k</span>
           </div>
           <div>
             <img src={logoAED} alt="" />
             <span className="name-usd">USD/CHF :</span>
-            <span className="number-used">{data.USDCHF}</span>
+            <span className="number-used">k</span>
           </div>
         </div>
         {/* for slide img for product  */}
@@ -167,7 +168,7 @@ const Home = (props) => {
           <Typed
             className="typing"
             strings={[
-              "We are some trader4s put a major effort in studying every static and variable in different markets。You should be aware that the traders are 2 types, an ordinary trader which controls about 4% of the market and the whale which controls over 96% of the market although the number of whales are nothing compared to ordinary traders。Together we will join whales 。We are not beginners not cheaters We create the future We are whales of trade",
+              "We are a group of traders, we have spent a few years in the financial markets and we studied every static and variable in the economy of the world's whales of individuals and countries . We inform you that 96% of the financial markets are owned by a number of individuals that don't exceed the fingers of one hand. We called them whales, and the remaining 4% of the market is owned by the general public . We promise you that together we will be part of a bigger entity, we will make a boom in this world, we will become whales.. We are not scammers, we are not beginners, we are the creators of the future We are 'WHALE 4 TRADE' ",
             ]}
             typeSpeed={7}
           />

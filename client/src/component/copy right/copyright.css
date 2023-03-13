@@ -1,0 +1,18 @@
+div h4 {
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 23985735986;
+  font-size: 1em;
+  padding: 5px 0;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  div h4 {
+    font-size: 0.5em;
+  }
+}/*# sourceMappingURL=copyright.css.map */

@@ -1,14 +1,15 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import Products from "./component/Products";
-import Home from "./component/Home";
-import Profile from "./component/profile";
-import SignIn from "./component/signin";
-import SignUp from "./component/signup";
-import Navbar from "./component/Navbar";
-import NotFound from "./component/NotFound";
-import Chat from "./component/chat";
 import "animate.css";
+import Chat from "./component/chat/chat";
+import NotFound from "./component/notFound/NotFound";
+import Navbar from "./component/navbar/Navbar";
+import SignIn from "./component/signin/signin";
+import SignUp from "./component/signup/signup";
+import Profile from "./component/profile/profile";
+import Home from "./component/home/Home";
+import Products from "./component/products/Products";
+// import CopyRight from "./component/copy right/copyRight";
 
 function App() {
   return (

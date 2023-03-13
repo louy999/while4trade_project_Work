@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../style/globals.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faListUl, faRightToBracket } from "@fortawesome/free-solid-svg-icons";
+import "./navbar.css";
 interface NavbarProps {}
 
 interface NavbarState {}

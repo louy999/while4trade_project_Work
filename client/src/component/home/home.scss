@@ -1,22 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Almarai:wght@800&display=swap");
-
-div.container.home-page {
+.img {
+  position: relative;
+  width: 99vw;
+  height: 80vh;
+  overflow: hidden;
+  z-index: -3461;
   img.img-background {
     width: 99vw;
-
+    border-radius: 15px;
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1;
     height: 70vh;
+    animation: kenburns-top 5s ease-out both;
   }
+}
+div.container.home-page {
+  width: 100vw;
+  position: relative;
 
   div.container-usd {
     position: relative;
-    top: 60vh;
+    bottom: 20vh;
     transition-duration: 1s;
     background-color: white;
     padding: 20px 15px 20px;
+    z-index: 345456;
     border-radius: 15px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     width: 50vw;
@@ -40,7 +49,7 @@ div.container.home-page {
   }
   .carousel {
     position: relative;
-    top: 10vw;
+    bottom: 20vw;
     margin-bottom: 20vh;
     h3 {
       text-transform: uppercase;
@@ -75,14 +84,18 @@ div.container.home-page {
   }
 }
 div.footer {
+  height: 25em;
   display: flex;
+  height: fit-content;
   justify-content: space-between;
   position: relative;
   top: 2em;
-  background-color: #273036;
+  background-color: #6c8ea4;
   div.about {
-    background-color: #273036;
+    background-color: #6c8ea4;
+    height: fit-content;
     position: relative;
+    width: fit-content;
     .animate__animated {
       text-align: center;
       margin: 0 0 20px;
@@ -98,11 +111,29 @@ div.footer {
       color: white;
       font-size: 1em;
       font-weight: bold;
-      // top: 10%;
       position: relative;
       z-index: 235356;
       display: block;
-      width: 50vw;
+      text-transform: uppercase;
+      font-weight: bold;
+      text-align: center;
+      width: 50%;
+      background-image: linear-gradient(
+        -225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%
+      );
+      background-size: auto auto;
+      background-clip: border-box;
+      background-size: 200% auto;
+      color: #fff;
+      background-clip: text;
+      text-fill-color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: textclip 2s linear infinite;
     }
   }
   div.contact {
@@ -122,8 +153,8 @@ div.footer {
       flex-wrap: wrap;
       a {
         display: flex;
-        flex-wrap: wrap;
         align-items: center;
+        flex-wrap: nowrap;
         svg {
           padding: 0.5em;
           color: white;
@@ -169,6 +200,31 @@ div.footer {
   .carousel {
     top: -30px !important;
   }
+
+  div.footer {
+    .typing {
+      font-size: 0.7em !important;
+      line-height: 1.5em;
+    }
+  }
+  div.contact {
+    .icon {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      a {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        svg {
+          padding: 0.5em;
+          color: white;
+          cursor: pointer;
+          font-size: 1.5em !important;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 800px) {
   img {
@@ -186,5 +242,16 @@ div.footer {
 @keyframes textclip {
   to {
     background-position: 200% center;
+  }
+}
+
+@keyframes kenburns-top {
+  0% {
+    transform: scale(1) translateY(0);
+    transform-origin: 50% 16%;
+  }
+  100% {
+    transform: scale(1.25) translateY(-15px);
+    transform-origin: top;
   }
 }

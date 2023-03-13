@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,600;0,700;1,700&display=swap");
+.profile > div.point {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile > div.point .title {
+  font-style: italic;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2em;
+  border-bottom: 2px solid #ddd;
+}
+.profile > div.point tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+.profile > div.point td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 10px;
+}
+.profile > div.point td.id {
+  border-right: none;
+}
+.profile > div.point td.created {
+  border-left: none;
+}
+
+.profile > div.user {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.profile > div.user div.photo {
+  width: 100%;
+  margin: 5px auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile > div.user div.photo .name-ed {
+  position: relative;
+}
+.profile > div.user div.photo .name-ed img {
+  width: 10em;
+  border-radius: 50%;
+  margin: 10px;
+}
+.profile > div.user div.photo .name-ed .edit-icon {
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+  right: -10%;
+  opacity: 0.5;
+}
+.profile > div.user div.photo .name-ed .edit-icon svg {
+  font-size: 0.7em;
+  position: absolute;
+  top: 0;
+}
+.profile > div.user div.photo .name-ed .edit-icon span {
+  margin: 0 3px;
+  text-transform: capitalize;
+  color: black;
+}
+.profile > div.user div.photo .name-ed .edit-icon:hover {
+  opacity: 1;
+}
+.profile > div.user div.photo .name-ed .status {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.profile > div.user div.photo .name-ed .status .online {
+  color: green;
+}
+.profile > div.user div.photo .name-ed .status .offline {
+  color: red;
+}
+.profile > div.user div.info {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  flex-wrap: wrap;
+}
+.profile > div.user div.info svg {
+  font-size: 0.7em;
+  position: absolute;
+  top: 0;
+  margin: 2px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.profile > div.user div.info .name {
+  width: 100%;
+}
+.profile > div.user div.info .name,
+.profile > div.user div.info .email,
+.profile > div.user div.info .number {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile > div.user div.info .name .title,
+.profile > div.user div.info .email .title,
+.profile > div.user div.info .number .title {
+  text-transform: capitalize;
+  margin: 2px;
+  padding: 0 2px;
+}
+.profile > div.user div.info .name .test,
+.profile > div.user div.info .email .test,
+.profile > div.user div.info .number .test {
+  color: cornflowerblue;
+}
+.profile > div.user div.count {
+  border-top: 2px solid #ddd;
+  margin: 2em 0 0;
+  padding: 1em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  text-transform: capitalize;
+}
+.profile > div.user div.count .line {
+  height: 100%;
+  width: 2px;
+  background-color: #ddd;
+  margin: 0 2px;
+}
+
+@media (max-width: 900px) {
+  .profile > div.user {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+.profile > div.tree {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.profile > div.tree .title {
+  font-style: italic;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2em;
+  border-bottom: 2px solid #ddd;
+}
+.profile > div.tree .list table {
+  width: 100%;
+}
+.profile > div.tree .list table tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+.profile > div.tree .list table td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 10px;
+}
+.profile > div.tree .list table td.id {
+  border-right: none;
+}
+.profile > div.tree .list table td.created {
+  border-left: none;
+}
+
+@media (max-width: 900px) {
+  .profile > div.tree {
+    width: 100%;
+  }
+}
+.profile > div.transaction {
+  font-family: "Source Sans Pro", sans-serif;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile > div.transaction .title {
+  font-style: italic;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2em;
+  border-bottom: 2px solid #ddd;
+}
+.profile > div.transaction .list > div {
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile > div.transaction .list > div.with > div, .profile > div.transaction .list > div.dep > div, .profile > div.transaction .list > div.con > div, .profile > div.transaction .list > div.sub-b > div, .profile > div.transaction .list > div.sub-p > div {
+  padding: 0 5px;
+}
+.profile > div.transaction .list > div.with > div.prog, .profile > div.transaction .list > div.dep > div.prog, .profile > div.transaction .list > div.con > div.prog, .profile > div.transaction .list > div.sub-b > div.prog, .profile > div.transaction .list > div.sub-p > div.prog {
+  font-size: 18px;
+  font-weight: bold;
+}
+.profile > div.transaction .list > div.with {
+  background-color: #fa27f3;
+}
+.profile > div.transaction .list > div.dep {
+  background-color: #8937de;
+}
+.profile > div.transaction .list > div.con {
+  background-color: #494ff5;
+}
+.profile > div.transaction .list > div.sub-b {
+  background-color: #3792de;
+}
+.profile > div.transaction .list > div.sub-p {
+  background-color: #40fff5;
+}
+
+.profile > div.point {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile > div.point .title {
+  font-style: italic;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2em;
+  border-bottom: 2px solid #ddd;
+}
+.profile > div.point tr:nth-child(even) {
+  background-color: #d6eeee;
+}
+.profile > div.point td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+  font-family: "Source Sans Pro", sans-serif;
+  border-radius: 10px;
+}
+.profile > div.point td.id {
+  border-right: none;
+}
+.profile > div.point td.created {
+  border-left: none;
+}
+
+.profile > div.bundle {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile > div.bundle .title {
+  font-style: italic;
+  width: 100%;
+  text-transform: capitalize;
+  font-size: 2em;
+  border-bottom: 2px solid #ddd;
+}
+.profile > div.bundle .s {
+  text-transform: capitalize;
+}
+.profile > div.bundle .time {
+  font-size: 2em;
+}
+
+.profile > div.url {
+  position: relative;
+  padding-top: 2em;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.profile > div.url .icon {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  opacity: 0.5;
+}
+.profile > div.url .icon:hover {
+  opacity: 1;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+}
+
+.back {
+  background: #e8cbc0; /* fallback for old browsers */ /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #636fa4, #e8cbc0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 70em;
+}
+
+.profile {
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  overflow: hidden;
+  top: 7em;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.profile > div {
+  background-color: #fff;
+  border-radius: 15px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1em 1em 2em;
+  position: relative;
+  margin: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.line {
+  height: 100%;
+  width: 2px;
+  background-color: #ddd;
+  margin: 0 2px;
+}/*# sourceMappingURL=profile.css.map */

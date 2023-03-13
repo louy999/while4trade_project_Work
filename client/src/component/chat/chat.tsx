@@ -1,3 +1,5 @@
+import "./chat.css";
+
 const Chat = (props: any) => {
   return (
     <>
